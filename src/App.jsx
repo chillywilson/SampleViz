@@ -30,7 +30,7 @@ export default function App() {
   
     <Canvas  camera= {{position: [-1.748, 1.446, 1.471],rotation:[-36.14, -46.58, -27.94],fov:90}}shadows>
     <Environment preset="forest" />
-      <LightsNOUi  />      
+      <Lights  />      
       <Suspense fallback={null}> 
       <Model castShadow receiveShadow/>
       <ContactShadows

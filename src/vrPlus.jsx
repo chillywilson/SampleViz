@@ -17,7 +17,21 @@ export default function  Model(props ) {
   const j = new AnimationMixer()
 
 
-  
+const red = useRef()
+
+   
+
+
+  useEffect(() => {
+    actions[names[1]].play()
+    actions[names[1]].clampWhenFinished =true
+    setTimeout(()=>
+    actions[names[1]].stop(),
+   800
+    )
+   
+  },[])
+
 
 
   const act1 = actions[names[1]]

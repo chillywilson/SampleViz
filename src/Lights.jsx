@@ -16,7 +16,7 @@ export default function Lights(props) {
   const spotRef = useRef()
 
   useHelper(directionalRef,DirectionalLightHelper,1,'red')
-  useHelper(spotRef,SpotLightHelper,10,'green')
+  useHelper(spotRef,SpotLightHelper,10,'blue')
 
  const diroptions = useMemo(() => {
     return {
